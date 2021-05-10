@@ -1,1 +1,268 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: Mulish;
+  src: url("../fonts/Mulish-Regular.ttf") format("ttf"), url("../fonts/Mulish-Regular.woff") format("woff"), url("../fonts/Mulish-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Bold.ttf") format("ttf"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+}
+
+body {
+  font-family: Mulish;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 33px;
+  background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  margin: 0 50px 0 0;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-list__item {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navbar-list__item:first-child {
+  margin-right: 51px;
+}
+
+.navbar-list__link {
+  color: #001A49;
+}
+
+.navbar-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-btn {
+  padding: 15px 30px;
+}
+
+.navbar-btn:first-child {
+  padding: 0;
+  margin-right: 50px;
+  background: transparent;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #001A49;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-btn:first-child {
+    margin-right: 25px;
+  }
+  .navbar-list__item:first-child {
+    margin-right: 25px;
+  }
+  .logo {
+    margin-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 500px;
+    width: 90%;
+  }
+  .navbar {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    margin: 0;
+  }
+  .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mobile-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: transparent;
+  }
+  .mobile-btn__item {
+    width: 100%;
+    height: 3px;
+    background: #001A49;
+  }
+}
+/*# sourceMappingURL=style.css.map */

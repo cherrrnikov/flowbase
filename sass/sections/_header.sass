@@ -1,0 +1,42 @@
+.header
+    padding: 30px 0
+    &-wrapper
+        display: flex
+        align-items: center
+.logo 
+    margin: 0 50px 0 0 
+.navbar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    justify-content: space-between
+    flex-basis: 100%
+    &-list
+        display: flex
+        &__item
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 20px
+            &:first-child 
+                margin-right: 51px
+        &__link
+            color: $text
+    &-btns
+        display: flex
+    &-btn
+        &:first-child
+            padding: 0
+            margin-right: 50px
+            background: transparent
+            font-family: Mulish
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 20px
+            color: $text
+        padding: 15px 30px
+
+.mobile
+    &-btn
+        display: none
