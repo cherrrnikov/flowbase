@@ -1,0 +1,128 @@
+.info
+    position: relative
+    padding-bottom: 120px
+    background: url('../img/infobg-1.svg') 0 20px no-repeat, url('../img/infobg-2.svg') right 172px no-repeat;
+.statistic
+    width: 100%
+    height: 170px
+    padding: 30px
+    background: #fff
+    border: 1px solid #E7EAEB
+    border-radius: 21px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    margin-bottom: 150px
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__count
+        font-family: Montserrat
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        text-align: center
+        margin-bottom: 2px
+        color: $text
+    &__name
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        color: #4F596A
+        white-space: nowrap
+    &-line
+        height: 1px
+        width: 112px
+        background: #E7EAEB
+        transform: rotate(90deg)
+
+.courses
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-info
+        max-width: 560px
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 61px
+        &__title
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 46px;
+            line-height: 56px;
+            text-align: center
+            color: $text
+            margin-bottom: 20px
+        &__text
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px
+            text-align: center;
+            color: $lightText
+    &-list
+        display: grid
+        width: 100%
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(4, 172px)
+        grid-row-gap: 30px
+        &__item
+            position: relative
+            width: 100%
+            height: 100%
+            background: linear-gradient(44.11deg, rgba(205, 16, 255, 0.05) 15.75%, rgba(159, 6, 255, 0.05) 84.63%)
+            border-radius: 21px;
+            padding: 39px 54px 41px 130px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &::before
+                content: ''
+                width: 80px
+                height: 80px
+                position: absolute
+                display: inline-block
+                top: 39px
+                left: 46px
+                background: url('../img/courses-icon.svg');
+                background-repeat: no-repeat
+                background-position: center
+        &__desc
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            max-width: 501px
+        &__title
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 20px
+            color: $text
+        &__subtitle
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #4F596A;
+        &__btn
+            width: 278px
+            padding: 18px 34px
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__line
+            height: 0.5px
+            width: 30px
+            transform: rotate(90deg)
+            background: #8639B5;
