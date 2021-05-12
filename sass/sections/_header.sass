@@ -22,9 +22,17 @@
                 margin-right: 51px
         &__link
             color: $text
+            transition: all 0.2s linear 0s
+            &:hover
+                color: #9F06FF
     &-btns
         display: flex
     &-btn
+        transition: all 0.2s linear 0s
+        padding: 15px 30px
+        position: relative
+        overflow: hidden
+        z-index: 2
         &:first-child
             padding: 0
             margin-right: 50px
@@ -35,8 +43,27 @@
             font-size: 16px
             line-height: 20px
             color: $text
-        padding: 15px 30px
-
+            &:hover
+                color: #9F06FF
+                background: transparent
+            &::before, &::after
+                display: none
+                
+        &:before, &::after
+            content: ''
+            width: 100%
+            height: 100%
+            display: inline-block
+            position: absolute
+            top: 0
+            left: 0
+            transition: all 0.2s linear 0s
+            background: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%)
+            z-index: -1
+            opacity: 0
+        &:hover
+            &~.navbar-btn &:before, &::after
+                opacity: 1
 .mobile
     &-btn
         display: none
