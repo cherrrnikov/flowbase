@@ -1,0 +1,114 @@
+.main
+    padding-bottom: 100px
+    position: relative
+    &-wrapper
+        position: relative
+        padding: 134px 0 94px 0
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 75.7%
+            height: 100%
+            background: linear-gradient(44.11deg, rgba(205, 16, 255, 0.05) 15.75%, rgba(159, 6, 255, 0.05) 84.63%)
+            mix-blend-mode: normal
+            border-radius: 0px 20px 20px 0px
+            z-index: -1
+    &-content
+        max-width: 560px
+    &-info
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        margin-bottom: 100px
+        &__title
+            font-family: Montserrat
+            font-style: normal
+            font-weight: bold
+            font-size: 60px
+            line-height: 68px
+            letter-spacing: -1px
+            color: $text
+            margin-bottom: 20px
+        &__text
+            font-family: Mulish
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            color: #4F596A
+            margin-bottom: 40px
+        &__btn
+            font-size: 20px
+            padding: 21px 49px
+    &-subs
+        display: flex
+        align-items: center
+        &__photos
+            width: 128px
+            height: 50px
+            display: flex
+            align-items: center
+            position: relative
+            margin-right: 7px
+        &__sub
+            position: absolute
+            top: 0
+            &:nth-child(1)
+                left: 0
+                z-index: 1
+            &:nth-child(2)
+                top: -4px
+                left: 30px
+                z-index: 2
+            &:nth-child(3)
+                top: -4px
+                left: 70px
+                z-index: 3
+        &__info
+            font-family: Mulish
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 20px
+            color: $text
+            &--purple
+                color: #9F07FF
+    &-video
+        position: absolute
+        top: 170px
+        right: 0
+        max-width: 590px
+        max-height: 360px
+        border-radius: 20px 0px 0px 20px
+        &__player
+            height: 100%
+            width: 100%
+            border-radius: 20px 0px 0px 20px
+            cursor: pointer
+        &__overlay
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            display: inline-block
+            background: $text
+            border-radius: 20px 0px 0px 20px
+        &__btn
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) scale(1)
+            transition: all 0.2s ease-in 0s
+            width: 70px
+            height: 70px
+            border-radius: 50%
+            background: #fff
+            background-image: url("../img/play.svg")
+            background-repeat: no-repeat
+            background-position: 52% 50%
+            &:hover
+                transform: translate(-50%, -50%) scale(1.2)

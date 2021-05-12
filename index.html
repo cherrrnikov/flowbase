@@ -12,13 +12,15 @@
         <header class="header">
             <div class="container">
                 <div class="header-wrapper">
-                    <div class="logo">
-                        <img
-                            src="img/logo.svg"
-                            alt="logoipsum"
-                            class="logo-img"
-                        />
-                    </div>
+                    <a href="index.html" class="header-logo">
+                        <div class="logo">
+                            <img
+                                src="img/logo.svg"
+                                alt="logoipsum"
+                                class="logo-img"
+                            />
+                        </div>
+                    </a>
                     <nav class="navbar">
                         <ul class="navbar-list">
                             <li class="navbar-list__item">
@@ -50,5 +52,78 @@
             </div>
             <!-- /.container -->
         </header>
+
+        <!-- Main section -->
+        <section class="main">
+            <div class="main-wrapper">
+                <div class="container">
+                    <div class="main-content">
+                        <div class="main-info">
+                            <h1 class="main-info__title">
+                                Learn no-code tools today.
+                            </h1>
+                            <p class="main-info__text">
+                                Create beautiful webflow sites with flowbase.
+                                Clone for <br />free and get started building a
+                                site today.
+                            </p>
+                            <button class="main-info__btn btn">
+                                Get started
+                            </button>
+                        </div>
+                        <!-- /.main-info -->
+                        <div class="main-subs">
+                            <div class="main-subs__photos">
+                                <div class="main-subs__sub">
+                                    <img
+                                        src="img/user1.png"
+                                        alt="Our student"
+                                        class="main-subs__img"
+                                    />
+                                </div>
+                                <div class="main-subs__sub">
+                                    <img
+                                        src="img/user2.png"
+                                        alt="Our student"
+                                        class="main-subs__img"
+                                    />
+                                </div>
+                                <div class="main-subs__sub">
+                                    <img
+                                        src="img/user3.png"
+                                        alt="Our student"
+                                        class="main-subs__img"
+                                    />
+                                </div>
+                            </div>
+                            <!-- /.main-subs__photos -->
+                            <span class="main-subs__info">
+                                Join over
+                                <span class="main-subs__info--purple"
+                                    >4,000+</span
+                                >
+                                students
+                            </span>
+                        </div>
+                        <!-- /.main-subs -->
+                    </div>
+                    <!-- /.main-content -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.main-wrapper -->
+            <div class="main-video">
+                <div class="main-video__overlay"></div>
+                <!-- /.main-video__overlay -->
+                <video
+                    src="video/main.mp4"
+                    loop
+                    class="main-video__player"
+                ></video>
+                <button data-play class="main-video__btn"></button>
+            </div>
+            <!-- /.main-video -->
+        </section>
+        <script src="js/script.js"></script>
     </body>
 </html>
