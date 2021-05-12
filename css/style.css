@@ -419,7 +419,7 @@ body {
   background: #fff;
   background-image: url("../img/play.svg");
   background-repeat: no-repeat;
-  background-position: 52% 50%;
+  background-position: center;
 }
 
 .main-video__btn:hover {
@@ -430,6 +430,9 @@ body {
 @media (max-width: 1200px) {
   .container {
     max-width: 900px;
+  }
+  .main-video {
+    max-width: 400px;
   }
 }
 
@@ -454,6 +457,54 @@ body {
   }
   .logo-img {
     width: 100%;
+  }
+  .main-wrapper {
+    padding-top: 100px;
+  }
+  .main-wrapper::before {
+    width: 100%;
+    border-radius: 0 0 0 0;
+  }
+  .main-content {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 70px;
+  }
+  .main-info__title, .main-info__text {
+    text-align: center;
+  }
+  .main-video {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+  }
+  .main-video__player, .main-video__overlay {
+    border-radius: 20px 20px 20px 20px;
+  }
+  .main-subs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-subs__photos {
+    margin-bottom: 10px;
   }
 }
 
@@ -502,6 +553,43 @@ body {
     width: 100%;
     height: 3px;
     background: #001A49;
+  }
+  .main-wrapper {
+    padding-top: 60px;
+  }
+  .main-info__title {
+    font-size: 52px;
+  }
+  .main-info__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding-bottom: 70px;
+  }
+  .main-info {
+    margin-bottom: 40px;
+  }
+  .main-info__title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .main-info__text {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .main-info__btn {
+    padding: 15px 35px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .main-video__btn {
+    width: 60px;
+    height: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */
