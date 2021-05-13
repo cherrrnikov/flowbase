@@ -1,0 +1,46 @@
+.bio
+    padding-bottom: 120px
+    &-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-info
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        max-width: 560px
+        &__title
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 46px;
+            line-height: 56px;
+            color: $text;
+            margin-bottom: 20px
+        &__text
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            color: $lightText;
+    &-avatar
+        width: 419px
+        height: 382px
+        background: url('../img/avatar-circle1.svg') 10px top no-repeat,  url('../img/avatar-circle2.svg') right bottom no-repeat
+        display: flex
+        align-items: center
+        justify-content: center
+        &__window
+            position: relative
+            width: 354px;
+            height: 354px;
+            border-radius: 50%
+            background: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
+            overflow: hidden
+        &__img
+            position: absolute
+            bottom: 0
+            left: 0
+            object-fit: cover
