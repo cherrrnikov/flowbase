@@ -813,6 +813,9 @@ body {
   .courses-list__title {
     margin-bottom: 10px;
   }
+  .bio-info__title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -889,6 +892,24 @@ body {
   .courses-list__desc {
     margin-bottom: 20px;
   }
+  .bio-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bio-info {
+    margin-bottom: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .bio-info__title {
+    text-align: center;
+  }
+  .bio-info__text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 576px) {
@@ -939,6 +960,27 @@ body {
   .courses-info__text {
     font-size: 16px;
   }
+  .bio-info__title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  .bio-info__text {
+    font-size: 16px;
+  }
+  .bio-avatar {
+    width: 380px;
+    height: 25em;
+  }
+  .bio-avatar__window {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .bio-avatar__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 477px) {
@@ -968,6 +1010,12 @@ body {
     font-size: 24px;
     line-height: 1.2;
   }
+  .info {
+    background: url("../img/infobg-1.svg") 0 0px no-repeat, url("../img/infobg-2.svg") right 172px no-repeat;
+  }
+  .bio-avatar {
+    width: 88%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -976,6 +1024,8 @@ body {
     height: 60px;
   }
   .statistic {
+    width: 80%;
+    margin: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -984,10 +1034,21 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 50px;
   }
   .statistic-line {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  .info {
+    background: url("../img/infobg-1.svg") 0 0px no-repeat, url("../img/infobg-2.svg") right 172px no-repeat;
+  }
+  .bio-avatar {
+    height: 300px;
+  }
+  .bio-avatar__window {
+    width: 250px;
+    height: 250px;
   }
 }
 
