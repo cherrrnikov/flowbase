@@ -1,0 +1,28 @@
+{
+    "courses": [
+        {
+            "title": "Analyzing User Data",
+            "desc": "Who are you developing for? How will they use your design? Building user personas can answer these.",
+            "count": 6,
+            "hours": 4.5
+        },
+        {
+            "title": "User Persona",
+            "desc": "Who are you developing for? How will they use your design? Building user personas can answer these.",
+            "count": 8,
+            "hours": 11
+        },
+        {
+            "title": "Prototyping",
+            "desc": "Who are you developing for? How will they use your design? Building user personas can answer these.",
+            "count": 4,
+            "hours": 2
+        },
+        {
+            "title": "Storyboarding",
+            "desc": "Who are you developing for? How will they use your design? Building user personas can answer these.",
+            "count": 25,
+            "hours": 78
+        }
+    ]
+}

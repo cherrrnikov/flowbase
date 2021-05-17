@@ -85,10 +85,55 @@
     .container
         max-width: 500px
         width: 90%
+    .header
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        background-color: #fff
+        z-index: 11
     .navbar
-        display: none
+        display: flex
+        position: absolute
+        padding: 50px
+        width: 100vw
+        height: 100vh
+        background: linear-gradient(44.11deg, #872E9E 15.75%, #9F06FF 84.63%);
+        top: 97.08px
+        right: -100%
+        flex-direction: column
+        align-items: flex-end
+        justify-content: flex-start
+        z-index: 10
+        &-list
+            flex-direction: column
+            align-items: flex-end
+            &__item
+                font-size: 24px
+                margin-bottom: 40px
+                &:first-child
+                    margin-right: 0
+            &__link
+                color: #fff
+                &:hover
+                    color: $text
+        &-btns
+            flex-direction: column
+            align-items: flex-end
+        &-btn
+            font-size: 24px
+            border: 1px solid #fff
+            &:first-child
+                padding: 10px
+                font-size: 24px
+                margin-right: 0
+                margin-bottom: 40px
+                color: #fff
+                border: none
+                &:hover
+                    color: $text
     .logo
-        width: 150px
+        width: 180px
         margin: 0
     .header
         &-wrapper
@@ -109,6 +154,7 @@
                 height: 3px
                 background: $text
     .main
+        padding-top: 97.08px
         &-wrapper
             padding-top: 60px
         &-info
@@ -175,7 +221,11 @@
         &-list
             &__link
                 font-size: 14px
+    .modal
+        top: 58%
 @media(max-width: 576px) 
+    .logo
+        width: 150px
     .main
         padding-bottom: 70px
         &-info
@@ -280,6 +330,12 @@
                 text-align: center
                 margin-bottom: 15px
                 font-size: 12px
+    .modal
+        width: 90%
+        height: 30em
+        &-title
+            font-size: 40px
+            text-align: center
 @media(max-width: 477px)
     .courses
         &-list
@@ -319,6 +375,16 @@
             &__review
                 font-size: 14px
                 line-height: 25px
+    .modal
+        padding: 30px
+        justify-content: center
+        &-title
+            font-size: 28px
+        &-input
+            &__input
+                font-size: 12px
+        &-btn
+            font-size: 18px
 @media(max-width: 390px)
     .main
         &-video

@@ -11,6 +11,7 @@
     align-items: center
     justify-content: space-between
     flex-basis: 100%
+    transition: all 0.2s ease-out 0s
     &-list
         display: flex
         &__item
@@ -67,3 +68,12 @@
 .mobile
     &-btn
         display: none
+        &__item
+            transition: all 0.2s ease-out 0s
+        &__active1
+            transform: translateY(9px) rotate(45deg)
+        &__active2
+            transform: translateY(-8px) rotate(-45deg)
+.navbar
+    &-show
+        right: 0 !important
