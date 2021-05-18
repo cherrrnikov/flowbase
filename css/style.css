@@ -854,10 +854,11 @@ body {
 }
 
 .reviews-slider__inner {
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .reviews-slider__wrapper {
@@ -871,6 +872,7 @@ body {
   padding: 50px 40px 40px 50px;
   border-radius: 20px;
   background: rgba(76, 0, 112, 0.195968);
+  margin-right: 50px;
 }
 
 .reviews-slider__review {

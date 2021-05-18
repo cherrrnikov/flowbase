@@ -69,8 +69,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-            closeModal(modal, modalOverlay);
+        // if (e.key === "Escape") {
+        //     closeModal(modal, modalOverlay);
+        // } else if (e.key === "ArrowRight") {
+        //     nextSlide();
+        // } else if
+
+        switch (e.key) {
+            case "Escape":
+                closeModal(modal, modalOverlay);
+                break;
+            case "ArrowRight":
+                nextSlide();
+                break;
+            case "ArrowLeft":
+                prevSlide();
+                break;
         }
     });
 
@@ -161,4 +175,39 @@ document.addEventListener("DOMContentLoaded", () => {
             new Course(title, desc, count, hours, ".courses-list").createcard();
         });
     });
+
+    //Slider
+    let slider = document.querySelector(".reviews-slider"),
+        sliderInner = slider.querySelector(".reviews-slider__inner"),
+        prevBtn = slider.querySelector("#prev"),
+        sliderContent = slider.querySelectorAll(".reviews-slider__item"),
+        nextBtn = slider.querySelector("#next"),
+        sliderWrapper = slider.querySelector(".reviews-slider__wrapper"),
+        slideWidth = window.getComputedStyle(sliderWrapper).maxWidth;
+
+    let offset = 0,
+        width = +slideWidth.slice(0, 3) + 50;
+
+    function nextSlide() {
+        if (offset == width * (sliderContent.length - 1)) {
+            offset = 0;
+        } else {
+            offset += width;
+        }
+
+        sliderInner.style.transform = `translateX(-${offset}px)`;
+    }
+
+    function prevSlide() {
+        if (offset == 0) {
+            offset = width * (sliderContent.length - 1);
+        } else {
+            offset -= width;
+        }
+
+        sliderInner.style.transform = `translateX(-${offset}px)`;
+    }
+    nextBtn.addEventListener("click", nextSlide);
+
+    prevBtn.addEventListener("click", prevSlide);
 });
